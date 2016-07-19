@@ -1,9 +1,9 @@
-# SGKBarcodeBundle
+# MWSBarcodeBundle
 
 [![Build Status](https://travis-ci.org/shangguokan/SGKBarcodeBundle.svg)](https://travis-ci.org/shangguokan/SGKBarcodeBundle)
 [![Latest Stable Version](https://poser.pugx.org/sgk/barcode-bundle/v/stable)](https://packagist.org/packages/sgk/barcode-bundle) [![Total Downloads](https://poser.pugx.org/sgk/barcode-bundle/downloads)](https://packagist.org/packages/sgk/barcode-bundle) [![Latest Unstable Version](https://poser.pugx.org/sgk/barcode-bundle/v/unstable)](https://packagist.org/packages/sgk/barcode-bundle) [![License](https://poser.pugx.org/sgk/barcode-bundle/license)](https://packagist.org/packages/sgk/barcode-bundle)
 
-SGKBarcodeBundle is the Symfony2 Barcode Generator Bundle what you want!
+MWSBarcodeBundle is the Symfony2 Barcode Generator Bundle what you want!
 This README is also available in French ([Français](Resources/doc/README_fr.md)) and Chinese ([中文](Resources/doc/README_zh-CN.md)).
 
 Features:
@@ -13,33 +13,33 @@ Features:
 3. Twig integration: you can simply use a extensional function of Twig in the template to generate Barcode
 4. Core of this bundle use this laravel project: [dinesh/barcode](https://github.com/dineshrabara/barcode)
 
-![SGKBarcodeBundle](Resources/doc/README.png)
+![MWSBarcodeBundle](Resources/doc/README.png)
 
 ## Installation
 
-Add SGKBarcodeBundle by running the command:
+Add MWSBarcodeBundle by running the command:
 ```sh
 // Symfony version < 2.7
-$ php composer.phar require sgk/barcode-bundle:~1.0
+$ php composer.phar require MWSimple/barcode-bundle:~1.0
 
 // Symfony version >= 2.7
-$ php composer.phar require sgk/barcode-bundle:~2.0
+$ php composer.phar require MWSimple/barcode-bundle:~2.0
 ```
 
-Or, add SGKBarcodeBundle to your ``composer.json``, then execute ``php composer.phar update``
+Or, add MWSBarcodeBundle to your ``composer.json``, then execute ``php composer.phar update``
 ```json
 // Symfony version < 2.7
 "require": {
-        "sgk/barcode-bundle": "~1.0"
+        "MWSimple/barcode-bundle": "~1.0"
     }
 
 // Symfony version >= 2.7
 "require": {
-        "sgk/barcode-bundle": "~2.0"
+        "MWSimple/barcode-bundle": "~2.0"
     }
 ```
 
-Composer will install the bundle to your project's vendor/sgk directory.
+Composer will install the bundle to your project's vendor/mwsimple directory.
 
 Then, Enable the bundle in the kernel:
 ```php
@@ -50,7 +50,7 @@ public function registerBundles()
 {
     $bundles = array(
         // ...
-        new SGK\BarcodeBundle\SGKBarcodeBundle(),
+        new MWSimple\BarcodeBundle\MWSBarcodeBundle(),
     );
 }
 ```
@@ -73,7 +73,7 @@ To generate one barcode, you have 5 options can be configured.
 
 ## Usage by service
   
-The bundle registers one service: ``sgk_barcode.generator`` which will allows you to generate barcode:
+The bundle registers one service: ``mwsimple_barcode.generator`` which will allows you to generate barcode:
 
 * outpout html
 ```php
@@ -84,7 +84,7 @@ $options = array(
 );
 
 $barcode =
-    $this->get('sgk_barcode.generator')->generate($options);
+    $this->get('mws_barcode.generator')->generate($options);
     
 return new Response($barcode);
 ```
@@ -101,7 +101,7 @@ $options = array(
 );
 
 $barcode =
-    $this->get('sgk_barcode.generator')->generate($options);
+    $this->get('mwsimple_barcode.generator')->generate($options);
     
 return new Response($barcode);
 ```
@@ -118,7 +118,7 @@ $options = array(
 );
 
 $barcode =
-    $this->get('sgk_barcode.generator')->generate($options);
+    $this->get('mwsimple_barcode.generator')->generate($options);
 
 return new Response('<img src="data:image/png;base64,'.$barcode.'" />');
 ```
@@ -150,7 +150,7 @@ This bundle extend one function of Twig: ``barcode`` which you can simply use it
 ## Usage without service
 
 ```php
-use SGK\BarcodeBundle\Generator\Generator;
+use MWSimple\BarcodeBundle\Generator\Generator;
 //...
 $options = array(
     'code'   => 'string to encode',
