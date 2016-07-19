@@ -1,5 +1,5 @@
 {
-  "name": "sgk/barcode-bundle",
+  "name": "mwsimple/barcode-bundle",
   "type": "symfony-bundle",
   "description": "Symfony2 Barcode Generator Bundle with Twig function extension",
   "keywords": [
@@ -34,7 +34,7 @@
     "phpunit/phpunit": "4.5.0"
   },
   "autoload": {
-    "psr-4": { "SGK\\BarcodeBundle\\": "" }
+    "psr-4": { "MWSimple\\BarcodeBundle\\": "" }
   },
   "minimum-stability": "stable"
 }
