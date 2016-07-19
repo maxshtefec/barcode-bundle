@@ -1,19 +1,19 @@
 <?php
 
-namespace SGK\BarcodeBundle\Generator;
+namespace MWSimple\BarcodeBundle\Generator;
 
 use Symfony\Component\OptionsResolver\OptionsResolver;
 use Symfony\Component\OptionsResolver\Options;
 
-use SGK\BarcodeBundle\Type\Type;
-use SGK\BarcodeBundle\DineshBarcode\DNS2D;
-use SGK\BarcodeBundle\DineshBarcode\DNS1D;
+use MWSimple\BarcodeBundle\Type\Type;
+use MWSimple\BarcodeBundle\DineshBarcode\DNS2D;
+use MWSimple\BarcodeBundle\DineshBarcode\DNS1D;
 
 /**
  * Class Generator
  * Encapsulation of project https://github.com/dineshrabara/barcode for Symfony2 usage
  *
- * @package SGK\BarcodeBundle\Generator
+ * @package MWSimple\BarcodeBundle\Generator
  */
 class Generator
 {
