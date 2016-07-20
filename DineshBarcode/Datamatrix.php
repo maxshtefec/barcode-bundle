@@ -1,6 +1,6 @@
 <?php
 
-namespace SGK\BarcodeBundle\DineshBarcode;
+namespace MWSimple\BarcodeBundle\DineshBarcode;
 
 // File name   : Datamatrix.php
 // Author      : Dinesh Rabara - Tecnick.com LTD - Manor Coach House, Church Hill, Aldershot, Hants, GU12 4RQ, UK - www.tecnick.com - info@tecnick.com

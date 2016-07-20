@@ -1,6 +1,6 @@
 <?php
 
-namespace SGK\BarcodeBundle\DineshBarcode;
+namespace MWSimple\BarcodeBundle\DineshBarcode;
 
 // File name   : PDF417.php
 // Author      : Dinesh Rabara

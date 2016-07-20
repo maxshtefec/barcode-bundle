@@ -1,14 +1,14 @@
 <?php
 
-namespace SGK\BarcodeBundle\Tests\Type;
+namespace MWSimple\BarcodeBundle\Tests\Type;
 
 use PHPUnit_Framework_TestCase;
-use SGK\BarcodeBundle\Type\Type;
+use MWSimple\BarcodeBundle\Type\Type;
 
 /**
  * Class TypeTest
  *
- * @package SGK\BarcodeBundle\Tests\Type
+ * @package MWSimple\BarcodeBundle\Tests\Type
  */
 class TypeTest extends PHPUnit_Framework_TestCase
 {

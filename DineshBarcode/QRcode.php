@@ -1,6 +1,6 @@
 <?php
 
-namespace SGK\BarcodeBundle\DineshBarcode;
+namespace MWSimple\BarcodeBundle\DineshBarcode;
 
 //============================================================+
 // File name   : QRcode.php
