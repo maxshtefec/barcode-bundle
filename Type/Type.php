@@ -1,12 +1,12 @@
 <?php
 
-namespace MWSimple\BarcodeBundle\Type;
+namespace SGK\BarcodeBundle\Type;
 
 /**
  * Class BarcodeType
  * Supported standards of barcode
  *
- * @package MWSimple\BarcodeBundle\Type
+ * @package SGK\BarcodeBundle\Type
  */
 class Type
 {

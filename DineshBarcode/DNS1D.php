@@ -7,7 +7,7 @@ use Illuminate\Support\Str;
 use Illuminate\Contracts\Config\Repository as ConfigRepository;
 */
 
-namespace MWSimple\BarcodeBundle\DineshBarcode;
+namespace SGK\BarcodeBundle\DineshBarcode;
 
 /**
  * Description of DNS1D

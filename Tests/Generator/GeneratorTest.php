@@ -1,14 +1,14 @@
 <?php
 
-namespace MWSimple\BarcodeBundle\Tests\Generator;
+namespace SGK\BarcodeBundle\Tests\Generator;
 
 use PHPUnit_Framework_TestCase;
-use MWSimple\BarcodeBundle\Generator\Generator;
+use SGK\BarcodeBundle\Generator\Generator;
 
 /**
  * Class GeneratorTest
  *
- * @package MWSimple\BarcodeBundle\Tests\Generator
+ * @package SGK\BarcodeBundle\Tests\Generator
  */
 class GeneratorTest extends PHPUnit_Framework_TestCase
 {

@@ -10,11 +10,11 @@ use Illuminate\Support\Str;
 use Illuminate\Contracts\Config\Repository as ConfigRepository;
 */
 
-namespace MWSimple\BarcodeBundle\DineshBarcode;
+namespace SGK\BarcodeBundle\DineshBarcode;
 
-use MWSimple\BarcodeBundle\DineshBarcode\QRcode;
-use MWSimple\BarcodeBundle\DineshBarcode\Datamatrix;
-use MWSimple\BarcodeBundle\DineshBarcode\PDF417;
+use SGK\BarcodeBundle\DineshBarcode\QRcode;
+use SGK\BarcodeBundle\DineshBarcode\Datamatrix;
+use SGK\BarcodeBundle\DineshBarcode\PDF417;
 
 /**
  * Description of DNS2D

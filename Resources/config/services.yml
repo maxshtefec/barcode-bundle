@@ -1,10 +1,10 @@
 services:
-    mws_barcode.generator:
-        class: MWSimple\BarcodeBundle\Generator\Generator
+    sgk_barcode.generator:
+        class: SGK\BarcodeBundle\Generator\Generator
 
-    mws_barcode.twig.extension:
-        class: MWSimple\BarcodeBundle\Twig\Extensions\Barcode
+    sgk_barcode.twig.extension:
+        class: SGK\BarcodeBundle\Twig\Extensions\Barcode
         arguments:
-            - @mws_barcode.generator
+            - @sgk_barcode.generator
         tags:
             - { name: twig.extension }

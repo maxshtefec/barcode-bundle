@@ -73,7 +73,7 @@ To generate one barcode, you have 5 options can be configured.
 
 ## Usage by service
   
-The bundle registers one service: ``mws_barcode.generator`` which will allows you to generate barcode:
+The bundle registers one service: ``mwsimple_barcode.generator`` which will allows you to generate barcode:
 
 * outpout html
 ```php
@@ -101,7 +101,7 @@ $options = array(
 );
 
 $barcode =
-    $this->get('mws_barcode.generator')->generate($options);
+    $this->get('mwsimple_barcode.generator')->generate($options);
     
 return new Response($barcode);
 ```
@@ -118,7 +118,7 @@ $options = array(
 );
 
 $barcode =
-    $this->get('mws_barcode.generator')->generate($options);
+    $this->get('mwsimple_barcode.generator')->generate($options);
 
 return new Response('<img src="data:image/png;base64,'.$barcode.'" />');
 ```

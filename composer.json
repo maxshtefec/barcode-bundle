@@ -34,7 +34,7 @@
     "phpunit/phpunit": "4.5.0"
   },
   "autoload": {
-    "psr-4": { "MWSimple\\BarcodeBundle\\": "" }
+    "psr-4": { "SGK\\BarcodeBundle\\": "" }
   },
   "minimum-stability": "stable"
 }

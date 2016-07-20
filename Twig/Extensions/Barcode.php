@@ -1,15 +1,15 @@
 <?php
 
-namespace MWSimple\BarcodeBundle\Twig\Extensions;
+namespace SGK\BarcodeBundle\Twig\Extensions;
 
 use Twig_Extension;
 use Twig_SimpleFunction;
-use MWSimple\BarcodeBundle\Generator\Generator;
+use SGK\BarcodeBundle\Generator\Generator;
 
 /**
  * Class Project_Twig_Extension
  *
- * @package MWSimple\BarcodeBundle\Twig\Extensions
+ * @package SGK\BarcodeBundle\Twig\Extensions
  */
 class Barcode extends Twig_Extension
 {
